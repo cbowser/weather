@@ -1,9 +1,7 @@
 /* ========================================
  * CSS written here will override Tachyons
  * ======================================== */
-.cold {
-  background-color: red;
-}
+.cold {background-color: blue;}
 
  .cold .icon {background:cyan;}
 
