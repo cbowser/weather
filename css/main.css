@@ -459,8 +459,8 @@ background-size: contain;}
 
 
 @keyframes sunnyday{
-  0% { left: -75%; }
-  100% { left: 125%; }
+  0% { left: -10%; }
+  100% { left: 90%; }
 }
 
 
