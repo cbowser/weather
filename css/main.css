@@ -121,6 +121,7 @@
   background-image:url(/images/lolacloud.png);
   background-repeat:no-repeat;
   background-position:center;
+  background-size:contain;
 }
 
 .hot .lolabean {
