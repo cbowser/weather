@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+
 
     <!-- Set a page title -->
     <title>Weather</title>
@@ -12,57 +16,198 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
 
+<!--BODY-->
   <body>
-    <div class="avenir">
 
-      <!-- If there is an error, this box is shown. 'dn' is the only required class -->
+<!--THIS ACTS AS THE BODY CONTAINER-->
+    <div class="montserrat pages">
+
+
+  <!-- If there is an error, this box is shown. 'dn' is the only required class -->
       <div id="error" class="dn bg-red white pa4 fixed bottom-0 w-100">
         Sorry, we couldn't find that city.
       </div>
 
-      <!-- Search Box -->
-      <form id="location-search" class="pa4">
-        <h1 class="flex flex-wrap items-baseline">
-          <span class="mr3 mb2">
-            Weather for:
-          </span>
-          <input type="text" id="area" value="Boston" class="flex-auto">
-        </h1>
-      </form>
-
-      <!-- Content -->
-
-<div class="flex flex-wrap">
-  <div class="w-40">
-  </div>
-        <div class="tc pa4 w-20 ba br3">
-          <h2 class="ma0 f5 ttu tracked">Location</h2>
-          <p class="ma0 tc"><span class="f1" id="location-name"></span></p>
-          <p class="ma0"><span class="f3" id="country"></span></p>
-        </div>
-
-        <div class="w-40">
-        </div>
-    </div>
 
 
-  <div class="flex flex-wrap pa4 justify-around pt0">
-        <div class="w-100 w-50-ns tc">
-          <h2>Temperature</h2>
-          <p><span class="f-headline-ns f1"> <span id="temp"></span> &deg;F </span></p>
-          <p>H: <span id="temp-max"></span>&deg;F</p>
-          <p>L: <span id="temp-min"></span>&deg;F</p>
-        </div>
 
-        <div class="w-100 w-50-ns tc">
-          <h2>Weather</h2>
-          <p>Condition: <span id="condition"></span></p>
-          <p>Desription: <span id="condition-description"></span></p>
-          <p>Wind Speed: <span id="wind-speed"></span>mph</p>
-        </div>
+<div class="ph3 tc"><h1 class="f1-ns ">What should I wear today, Lola?</h1></div>
+
+
+
+<div class="flex flex-row-ns flex-column items-center justify-center">
+      <div class="tc">
+        <p class="f5-ns f5 pr3">Enter a city: </p>
       </div>
 
+    <div class="tc">
+      <form id="location-search" class="">
+        <h1 class="flex flex-wrap items-baseline">
+          <span class="f5 f3-ns">
+          </span>
+          <input type="text" id="area" value="Boston" class="flex-auto f5">
+        </h1>
+      </form>
     </div>
+
+
+</div>
+
+<!--MAIN BOX-->
+
+
+<div class="flex flex-row-ns flex-column-reverse justify-around">
+
+
+<!--FLEXBOX ONE HEADLINES-->
+<div class="flex flex-column wardrobe mb5">
+
+
+  <!--LOCATION-->
+            <div class="flex flex-column items-center justify-center pa5 locate">
+              <div class="ttu tracked">location</div>
+              <div class="flex flex-row justify-center f2">
+                <p class="ma0 pl3 pr1 f1"><span class="" id="location-name"></span>,</p>
+                <p class="ma0 f1"><span class="" id="country"></span></p>
+              </div>
+            </div>
+
+
+
+            <!--TEMPERATURE-->
+            <div class="flex flex-row-ns flex-column items-center justify-start pa5 stage">
+<div class="flex flex-column">
+              <div class="ttu tracked tc">temperature</div>
+
+                  <p class="mb0"><span class="f-subheadline-ns f1"> <span id="temp"></span> &deg;F </span></p>
+
+                <div class="flex flex-row items-center justify-around">
+                    <p>&#8593; <span id="temp-max"></span>&deg;F</p>
+                    <p>&#8595; <span id="temp-min"></span>&deg;F</p>
+                  </div>
+
+              </div>
+
+                <!--LOLA IMAAGE-->
+                <div class="nl4 lolabean">
+                  <!--CLOUD ANIMATION-->
+                  <div class="cloudyday">
+                  </div>
+                  <div class="cloudyday2">
+                  </div>
+
+                  <!--RAINING ANIMATION-->
+                  <div class="element">
+                  </div>
+                  <div class="element-two">
+                  </div>
+                  <div class="element-three">
+                  </div>
+                  <div class="element-four">
+                  </div>
+                  <div class="element-five">
+                  </div>
+                  <div class="element-six">
+                  </div>
+
+                  <!--SNOW ANIMATION-->
+                  <div class="flake">
+                  </div>
+                  <div class="flake-two">
+                  </div>
+                  <div class="flake-three">
+                  </div>
+                  <div class="flake-four">
+                  </div>
+                  <div class="flake-five">
+                  </div>
+                  <div class="flake-six">
+                  </div>
+
+
+                  <!--SUN ANIMATION-->
+                  <div class="sunnyday">
+                  </div>
+
+                  <!--THUNDERSTORM-->
+
+                  <div class="storm">
+                  </div>
+                  <div class="bolt">
+                  </div>
+                  <div class="bolt-two">
+                  </div>
+
+
+
+                  <!--WINDY-->
+
+                  <div class="windyday"></div>
+                    <div class="windyday2"></div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+<!--WEATHER-->
+              <div class="flex flex-row-ns flex-column bg-moon-gray">
+                <div class="flex flex-column items-center justify-start w-50-ns pa3 current">
+                  <div class="ttu pt3">Current Conditions</div>
+                  <p class="f2 mb0 pb0"><span id="condition"></span></p>
+                  <p class="i f6 mt0"><span id="condition-description"></span></p>
+                </div>
+
+
+<!--WIND-->
+            <div class="flex flex-column items-center justify-start w-50-ns air pa3">
+
+              <div class="ttu pt3">wind speed</div>
+                <p class="f2"><span id="wind-speed"></span> mph</p>
+              </div>
+            </div>
+
+
+
+          <div class="flex flex-row-ns flex-column center f6 justify-between pv4">
+
+<a class="link black hover-hot-pink" href="lola.html"><div class="tc ma3 ba br3 ph2"><p>lola's wardrobe</p></div></a>
+<a class="link black hover-hot-pink" href="http://caseybowser.com">
+<div class="tc ma3 ba br3 ph2">  <p>contact designer</p></div></a>
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--BODY CLOSING DIV-->
+</div>
+
+
+
+
+
 
     <!-- Site JavaScript -->
     <script src="/javascript/toggleClass.js" charset="utf-8"></script>

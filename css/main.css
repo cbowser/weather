@@ -1,11 +1,741 @@
 /* ========================================
  * CSS written here will override Tachyons
  * ======================================== */
-.cold {background-color: blue;}
 
- .cold .icon {background:cyan;}
 
- .warm {background:orange;}
+ /*google TYPEFACEs*/
 
- .hot {background:tomato;
- color:yellow;}
+ .roboto {font-family: 'Roboto', sans-serif;}
+
+.robotocon {font-family: 'Roboto Condensed', sans-serif;
+}
+
+.montserrat {font-family: 'Montserrat', sans-serif;}
+
+
+.pages {font-weight: 100;}
+
+.lighter {font-weight: 100;}
+
+/*MAIN DIV COLOR*/
+.cold .wardrobe {background-color: #FCFFB4;}
+
+.warm .wardrobe {background-color:#D8FFC5;}
+
+.hot .wardrobe {background-color:#A9FFE4;}
+/*LOCATION BANNER COLOR*/
+
+.warm .locate {
+  background-color: #FFC98F;
+}
+.cold .locate {
+  background-color:#BEDFFF;
+}
+
+.hot .locate {
+  background-color:#FFAC96;
+}
+
+/*MAIN BANNER COLOR*/
+
+.hot .stage {
+  background-color: #FCF3CF;
+}
+
+.cold .stage {background-color: #AEEEB8;}
+
+.warm .stage {background-color:#FDFABB;}
+/*CONDITIONS BANNER COLOR*/
+
+.clear .current {
+  background-color: lightskyblue;
+}
+.clouds .current {
+  background-color:lightgray;
+}
+
+.thunderstorm .current {
+  background-color: lightslategray;
+}
+
+.rain .current {
+  background-color: gainsboro;}
+
+
+.snow .current {
+  background-color:floralwhite;
+
+}
+
+/*WIND BANNER*/
+.calm .air {
+  background-color:#C7E8FF;
+}
+
+.breezy .air {
+  background-color:#DFE1FC;
+}
+
+.windy .air {
+  background-color: #8CCBFF;
+}
+
+
+
+/*LOLA OUTFITS*/
+.lolabean {
+  height:500px;
+  width:500px;
+}
+
+.snow .lolabean {
+  background-image: url(/images/lolacold.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.clouds .lolabean {
+  background-image:url(/images/lolacloud.png);
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+.cold .lolabean {
+  background-image: url(/images/lolacold.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.warm .lolabean {
+  background-image:url(/images/lolacloud.png);
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+.hot .lolabean {
+  background-image: url(/images/lolahot.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.rain .lolabean {
+background-image: url(/images/rainlola2.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size:contain;
+}
+
+.drizzle .lolabean {
+background-image: url(/images/rainlola2.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size:contain;
+}
+
+
+/*RAIN ANIMATION*/
+
+.rain .element
+{height:50px;
+  width:60px;
+animation-name: top;
+animation-duration: 5s;
+animation-timing-function: linear;
+position: relative;
+right:-10rem;
+animation-iteration-count: infinite;
+background-image: url(/images/lightrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+
+.rain .element-two
+{height:50px;
+  width:60px;
+animation-name: top;
+animation-duration: 5s;
+animation-timing-function:linear;
+position: relative;
+right:-20rem;
+animation-iteration-count: infinite;
+background-image: url(/images/medrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.rain .element-three
+{height:50px;
+  width:60px;
+animation-name: top;
+animation-duration: 5s;
+animation-timing-function:linear;
+position: relative;
+right:-30rem;
+animation-iteration-count: infinite;
+background-image: url(/images/darkrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.rain .element-four
+{height:50px;
+  width:60px;
+animation-name: top;
+animation-duration: 5s;
+animation-timing-function:linear;
+position: relative;
+right::-60rem;
+animation-iteration-count: infinite;
+background-image: url(/images/darkrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.rain .element-five
+{height:50px;
+  width:60px;
+animation-name: top;
+animation-duration: 5s;
+animation-timing-function:linear;
+position: relative;
+top:100%;
+right:-35rem;
+animation-iteration-count: infinite;
+animation-delay:3s;
+background-image: url(/images/medrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.rain .element-six
+{height:50px;
+  width:60px;
+animation-name: top;
+animation-duration: 5s;
+animation-timing-function:linear;
+position: relative;
+top:100%;
+right:-20rem;
+animation-iteration-count: infinite;
+animation-delay:3s;
+background-image: url(/images/lightrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+
+@keyframes top {
+  0% {top:-90%;
+  }
+  100% {top:100%;}
+}
+
+/*DRIZZLE ANIMATION*/
+
+.drizzle .element
+{height:50px;
+  width:60px;
+animation-name: drizzle;
+animation-duration: 7s;
+animation-timing-function: linear;
+position: relative;
+top:100%;
+left:-30rem;
+animation-iteration-count: infinite;
+animation-delay: 2s;
+background-image: url(/images/lightrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.drizzle .element-two
+{height:50px;
+  width:60px;
+animation-name: drizzle;
+animation-duration: 7s;
+animation-timing-function:linear;
+position: relative;
+top:100%;
+left:-40rem;
+animation-iteration-count: infinite;
+background-image: url(/images/medrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.drizzle .element-three
+{height:50px;
+  width:60px;
+animation-name: drizzle;
+animation-duration: 7s;
+animation-timing-function:linear;
+position: relative;
+top:100%;
+left:-35rem;
+animation-iteration-count: infinite;
+animation-delay: 1s;
+background-image: url(/images/darkrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+@keyframes drizzle {
+  0% {top:-90%;}
+  100% {top:100%}
+}
+
+
+/*SNOW ANIMATION*/
+
+.snow .flake
+{height:50px;
+  width:60px;
+animation-name: flake;
+animation-duration: 5s;
+animation-timing-function: linear;
+position: relative;
+top:-180%;
+left:30rem;
+animation-iteration-count: infinite;
+animation-delay: 1s;
+background-image: url(/images/snowflake.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.snow .flake-two
+{height:50px;
+  width:60px;
+animation-name: flake;
+animation-duration: 5s;
+animation-timing-function:linear;
+position: relative;
+top:-180%;
+left:20rem;
+animation-iteration-count: infinite;
+background-image: url(/images/snowflake.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.snow .flake-three
+{height:50px;
+  width:60px;
+animation-name: flake;
+animation-duration: 13s;
+animation-timing-function:linear;
+position: relative;
+top:-180%;
+left:10rem;
+animation-iteration-count: infinite;
+animation-delay: 50ms;
+background-image: url(/images/snowflake.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.snow .flake-four
+{height:50px;
+  width:60px;
+animation-name: flake;
+animation-duration: 10s;
+animation-timing-function:linear;
+position: relative;
+top:-180%;
+left:5rem;
+animation-iteration-count: infinite;
+animation-delay: 1s;
+background-image: url(/images/snowflake.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.snow .flake-five
+{height:50px;
+  width:60px;
+animation-name: flake;
+animation-duration: 6s;
+animation-timing-function:linear;
+position: relative;
+top:-180%;
+left:-5rem;
+animation-iteration-count: infinite;
+animation-delay:1s;
+background-image: url(/images/snowflake.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.snow .flake-six
+{height:50px;
+  width:60px;
+animation-name: flake;
+animation-duration: 6s;
+animation-timing-function:linear;
+position: relative;
+top:-180%;
+left:15rem;
+animation-iteration-count: infinite;
+animation-delay:;
+background-image: url(/images/snowflake.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+
+@keyframes flake {
+  0% {top:-90%;}
+  100% {top:100%}
+}
+
+
+
+
+
+/*CLOUD ANIMATION*/
+
+.cloudyday {
+  height:6rem;
+  width:100%;
+  position: relative;
+}
+
+.cloudyday2 {
+  height:6rem;
+  width:100%;
+  position: relative;
+}
+
+
+.clouds .cloudyday {
+  left: 100%;
+  top: -5%;
+  margin: 0;
+  animation-name: cloudyday;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  background-image: url(/images/cloud.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-iteration-count: infinite;
+}
+
+.clouds .cloudyday2 {
+  right: 100%;
+  top: -20%;
+  margin: 0;
+  animation-name: cloudyday2;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  background-image: url(/images/cloud.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes cloudyday {
+  0% { left:-50%; }
+  100% { left: 100%; }
+}
+
+@keyframes cloudyday2 {
+  0% { right:-130% }
+  100% { right: 100%; }
+}
+
+
+/*SUN ANIMATION*/
+
+.sunnyday {
+  height:9rem;
+  width:100%;
+  position: relative;
+}
+
+
+.clear .sunnyday {
+  left: 100%;
+  top: -16rem;
+  margin: 0;
+  animation-name: sunnyday;
+  animation-duration:20s;
+  animation-timing-function: linear;
+  background-image: url(/images/sun.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes sunnyday{
+  0% { left: -75%; }
+  100% { left: 125%; }
+}
+
+
+/*THUNDERSTORM*/
+
+
+.storm{
+  height:7rem;
+  width:100%;
+  position: relative;
+}
+
+
+.thunderstorm .storm {
+  position: absolute;
+  left: 100%;
+  top: 8rem;
+  margin: 0;
+  animation-name: storm;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  background-image: url(/images/cloud.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes storm {
+  0% { left: 0%; }
+  100% { left: 100%; }
+}
+
+
+
+.thunderstorm .bolt
+{height:80px;
+  width:60px;
+  animation-name: bolt;
+animation-duration: 5s;
+animation-timing-function:linear;
+position: relative;
+top:-200%;
+left:20rem;
+animation-iteration-count: infinite;
+animation-delay:3s;
+background-image: url(/images/bolt.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.thunderstorm .bolt-two
+{height:80px;
+  width:60px;
+  animation-name: bolt;
+animation-duration: 4s;
+animation-timing-function:linear;
+position: relative;
+top:-200%;
+left:10rem;
+animation-iteration-count: infinite;
+animation-delay:2s;
+background-image: url(/images/bolt.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+
+@keyframes bolt {
+  0% {top:-90%;}
+  100% {top:100%}
+}
+
+
+/*THUNDERSTORM RAIN*/
+
+.thunderstorm .element
+{height:50px;
+  width:60px;
+animation-name: top;
+animation-duration: 5s;
+animation-timing-function: linear;
+position: relative;
+right:-10rem;
+animation-iteration-count: infinite;
+background-image: url(/images/lightrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+
+.thunderstorm .element-two
+{height:50px;
+  width:60px;
+animation-name: top;
+animation-duration: 5s;
+animation-timing-function:linear;
+position: relative;
+right:-20rem;
+animation-iteration-count: infinite;
+background-image: url(/images/medrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.thunderstorm .element-three
+{height:50px;
+  width:60px;
+animation-name: top;
+animation-duration: 5s;
+animation-timing-function:linear;
+position: relative;
+right:-30rem;
+animation-iteration-count: infinite;
+background-image: url(/images/darkrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.thunderstorm .element-four
+{height:50px;
+  width:60px;
+animation-name: top;
+animation-duration: 5s;
+animation-timing-function:linear;
+position: relative;
+right::-60rem;
+animation-iteration-count: infinite;
+background-image: url(/images/darkrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.thunderstorm .element-five
+{height:50px;
+  width:60px;
+animation-name: top;
+animation-duration: 5s;
+animation-timing-function:linear;
+position: relative;
+top:100%;
+right:-35rem;
+animation-iteration-count: infinite;
+animation-delay:3s;
+background-image: url(/images/medrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+.thunderstorm .element-six
+{height:50px;
+  width:60px;
+animation-name: top;
+animation-duration: 5s;
+animation-timing-function:linear;
+position: relative;
+top:100%;
+right:-20rem;
+animation-iteration-count: infinite;
+animation-delay:3s;
+background-image: url(/images/lightrain.png);
+background-repeat: no-repeat;
+background-size: contain;}
+
+
+@keyframes top {
+  0% {top:-90%;
+  }
+  100% {top:100%;}
+}
+
+
+/*WINDY*/
+
+.windyday {
+    height:5rem;
+    width:100%;
+    position: relative;
+  }
+  .windyday2 {
+      height:5rem;
+      width:100%;
+      position: relative;
+    }
+
+
+  .breezy .windyday {
+    left: 100%;
+    top: -110%;
+    margin: 0;
+    animation-name: windyday;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    background-image: url(/images/wind.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-iteration-count: infinite;
+  }
+
+
+  .windy .windyday {
+    left: 100%;
+    top: -130%;
+    margin: 0;
+    animation-name: windyday;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    background-image: url(/images/wind.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-iteration-count: infinite;
+  }
+
+  .windy .windyday2 {
+    right: 100%;
+    top: -120%;
+    margin: 0;
+    animation-name: windyday2;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    background-image: url(/images/wind2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-iteration-count: infinite;
+  }
+
+
+  @keyframes windyday {
+    0% { left: -60%; }
+    100% { left: 100%; }
+  }
+
+  @keyframes windyday2 {
+    0% { right:-60% }
+    100% { right: 100%; }
+  }
+
+
+/*
+  .breezy .windyday2 {
+    left: 100%;
+    top: 0;
+    margin: 0;
+    animation-name: windyday2;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    background-image: url(/images/wind2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-iteration-count: infinite;
+  }
+
+  .breezy .windyday {
+    position: relative;
+    left: 100%;
+    top: 20rem;
+    margin: 0;
+    animation-name: windyday;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    background-image: url(/images/wind.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes windyday {
+    0% { right: -180%; }
+    100% { right: 100%; }
+  }
+
+  @keyframes windyday2 {
+0% {right:-60%}
+100% {right:0;}
+  }
+
+  /*LOLA'S PAGE*/
+  .numbers {font-weight: bolder;}
+
+.scale {
+  display:inline-block;
+  transition: all 1s ease-out;
+}
+
+.skale:hover {transform:scale(3)}
