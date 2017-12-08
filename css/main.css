@@ -88,6 +88,12 @@
   width:500px;
 }
 
+@media (max-width:500px) {
+  .lolabean {height:300px;
+  width:300px;}
+
+}
+
 .snow .lolabean {
   background-image: url(/images/lolacold.png);
   background-position: center;
