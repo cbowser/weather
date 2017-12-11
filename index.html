@@ -16,193 +16,173 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
 
+
 <!--BODY-->
   <body>
 
 <!--THIS ACTS AS THE BODY CONTAINER-->
-    <div class="montserrat pages">
+    <div class="montserrat">
 
 
   <!-- If there is an error, this box is shown. 'dn' is the only required class -->
-      <div id="error" class="dn bg-red white pa4 fixed bottom-0 w-100">
+      <div id="error" class="dn bg-hot-pink white pa4 fixed bottom-0 w-100">
         Sorry, we couldn't find that city.
       </div>
 
 
 
 
-<div class="ph3 tc"><h1 class="f1-ns avenir fw5">What should I wear today, Lola?</h1></div>
+
+  <!--LOCATION "locate"-->
+        <div class="flex flex-column items-center justify-center pv5 locate">
+            <div class="tc"><h1 class="f1-ns avenir fw5 ph3">What should I wear today, Lola?</h1>
+            </div>
+
+                <!--LOCATION SEARCH-->
+                <div class="flex flex-row-ns flex-column items-center">
+                    <div class="tc"><p class="f5-ns f5 pr3 avenir fw5">Enter a city: </p>
+                    </div>
+
+                    <div class="tc">
+                      <form id="location-search" class="">
+                        <h1 class="flex flex-wrap items-baseline">
+                          <span class="f4">
+                          </span>
+                          <input type="text" id="area" value="Boston" class="flex-auto f4 avenir pa1">
+                          <button class="btn f3 ph3 avenir pointer bg-transparent black">&#8594;</button>
+                        </h1>
+                      </form>
+                    </div>
+
+
+                </div>
+
+        </div>
 
 
 
-<div class="flex flex-row-ns flex-column items-center justify-center">
-      <div class="tc">
-        <p class="f5-ns f5 pr3">Enter a city: </p>
-      </div>
+<!--TEMPERATURE "stage"-->
 
-    <div class="tc">
-      <form id="location-search" class="">
-        <h1 class="flex flex-wrap items-baseline">
-          <span class="f5 f3-ns">
-          </span>
-          <input type="text" id="area" value="Boston" class="flex-auto f5">
-        </h1>
-      </form>
+<div class="flex flex-row-ns flex-column-reverse items-center pa3 wardrobe justify-around">
+
+
+<!--TEMPERATURE & LOCATION SIDE - LEFT OF LOLA -->
+        <div class="flex flex-column w-50-ns">
+          <!--LOCATION-->
+              <div class="flex flex-row tc justify-center avenir fw4 mb3-ns mt5 mt0-ns">
+                <p class="ma0 pr1 f5-ns f6 ttu"><span class="" id="location-name"></span>,</p>
+                <p class="ma0 f5-ns f6 ttu"><span class="" id="country"></span></p>
+              </div>
+          <!--TEMPERATURE-->
+              <h2 class="ma0 f-headline-ns f-subheadline tc"><span class=""> <span id="temp"></span> &deg;F </span></h2>
+
+              <div class="flex flex-row items-center justify-center tc">
+                <p class="f3-ns f4 ph3">&#8593; <span id="temp-max"></span>&deg;F</p>
+                <p class="f3-ns f4 ph3">&#8595; <span id="temp-min"></span>&deg;F</p>
+              </div>
+
+
+              <div class="flex flex-row items-center justify-around tc extra f6 ma0 pa0">
+                <p class=""><span id="condition"></span></p>
+                <p class="mt0"><span id="condition-description"></span></p>
+                <p class=""><span id="wind-speed"></span> mph</p>
+              </div>
+
+        </div>
+
+<!--LOLA AND ANIMATIONS-->
+
+
+  <div class="lolabean w-50-ns mt5 mv0-ns">
+
+    <!--CLOUD ANIMATION-->
+    <div class="cloudyday">
+    </div>
+    <div class="cloudyday2">
+    </div>
+
+    <!--RAINING ANIMATION-->
+    <div class="element">
+    </div>
+    <div class="element-two">
+    </div>
+    <div class="element-three">
+    </div>
+    <div class="element-four">
+    </div>
+    <div class="element-five">
+    </div>
+    <div class="element-six">
+    </div>
+
+    <!--SNOW ANIMATION-->
+    <div class="flake">
+    </div>
+    <div class="flake-two">
+    </div>
+    <div class="flake-three">
+    </div>
+    <div class="flake-four">
+    </div>
+    <div class="flake-five">
+    </div>
+    <div class="flake-six">
     </div>
 
 
+    <!--SUN ANIMATION-->
+    <div class="sunnyday">
+    </div>
+
+    <!--THUNDERSTORM-->
+
+    <div class="storm">
+    </div>
+    <div class="bolt">
+    </div>
+    <div class="bolt-two">
+    </div>
+
+    <!--WINDY-->
+
+    <div class="windyday"></div>
+    <div class="windyday2"></div>
+
+
+</div>
 </div>
 
-<!--MAIN BOX-->
-
-
-<div class="flex flex-row-ns flex-column-reverse justify-around">
-
-
-<!--FLEXBOX ONE HEADLINES-->
-<div class="flex flex-column wardrobe mb5">
-
-
-  <!--LOCATION-->
-            <div class="flex flex-column items-center justify-center pa5 locate">
-              <div class="ttu tracked tc">location</div>
-              <div class="flex flex-row-ns flex-column tc justify-center f2">
-                <p class="ma0 pl3 pr1 f1"><span class="" id="location-name"></span>,</p>
-                <p class="ma0 f1"><span class="" id="country"></span></p>
-              </div>
-            </div>
+</div>
 
 
 
-            <!--TEMPERATURE-->
-            <div class="flex flex-row-ns flex-column items-center justify-start pa5 stage">
-<div class="flex flex-column">
-              <div class="ttu tracked tc">temperature</div>
-
-                  <p class="mb0"><span class="f-subheadline-ns f1"> <span id="temp"></span> &deg;F </span></p>
-
-                <div class="flex flex-row items-center justify-around">
-                    <p>&#8593; <span id="temp-max"></span>&deg;F</p>
-                    <p>&#8595; <span id="temp-min"></span>&deg;F</p>
-                  </div>
-
-              </div>
-
-                <!--LOLA IMAAGE-->
-                <div class="lolabean pa0 ma0">
-                  <!--CLOUD ANIMATION-->
-                  <div class="cloudyday">
-                  </div>
-                  <div class="cloudyday2">
-                  </div>
-
-                  <!--RAINING ANIMATION-->
-                  <div class="element">
-                  </div>
-                  <div class="element-two">
-                  </div>
-                  <div class="element-three">
-                  </div>
-                  <div class="element-four">
-                  </div>
-                  <div class="element-five">
-                  </div>
-                  <div class="element-six">
-                  </div>
-
-                  <!--SNOW ANIMATION-->
-                  <div class="flake">
-                  </div>
-                  <div class="flake-two">
-                  </div>
-                  <div class="flake-three">
-                  </div>
-                  <div class="flake-four">
-                  </div>
-                  <div class="flake-five">
-                  </div>
-                  <div class="flake-six">
-                  </div>
 
 
-                  <!--SUN ANIMATION-->
-                  <div class="sunnyday">
-                  </div>
-
-                  <!--THUNDERSTORM-->
-
-                  <div class="storm">
-                  </div>
-                  <div class="bolt">
-                  </div>
-                  <div class="bolt-two">
-                  </div>
-
-
-
-                  <!--WINDY-->
-
-                  <div class="windyday"></div>
-                    <div class="windyday2"></div>
-
-
-
-                </div>
-
-
-
-            </div>
+<!--LOLA IMAAGE/DIV "Lolabean"-->
 
 
 <!--WEATHER-->
-              <div class="flex flex-row-ns flex-column bg-moon-gray">
-                <div class="flex flex-column items-center justify-start w-50-ns pa3 current">
-                  <div class="ttu pt3">Current Conditions</div>
-                  <p class="f2 mb0 pb0"><span id="condition"></span></p>
-                  <p class="i f6 mt0"><span id="condition-description"></span></p>
-                </div>
+
 
 
 <!--WIND-->
-            <div class="flex flex-column items-center justify-start w-50-ns air pa3">
-
-              <div class="ttu pt3">wind speed</div>
-                <p class="f2"><span id="wind-speed"></span> mph</p>
-              </div>
-            </div>
 
 
 
-          <div class="flex flex-row-ns flex-column center f6 justify-between pv4">
 
-<a class="link black hover-dark-blue" href="lola.html"><div class="f5 tc ma3 ba br3 ph2"><p>lola's wardrobe</p></div></a>
-<a class="link black hover-dark-blue" href="https://cbowser-portfolio.netlify.com/">
-<div class="tc ma3 ba br3 ph2 f5">  <p>contact designer</p></div></a>
-</div>
+<div class="flex flex-column center justify-between pv4 locate avenir">
 
-</div>
+<a class="w-25-ns f5-ns f6 center grow no-underline br-pill ph3 pv2 black hover-navy avenir" href="lola.html"><div class="tc ba br3 ph2"><p>Lola's Wardrobe</p></div></a>
 
+
+<a  class="no-underline black mb0 pb0 pt4 f7" href="https://cbowser-portfolio.netlify.com/">
+<div class="t2 tc">Created by Casey</div></a>
 
 </div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--BODY CLOSING DIV-->
-</div>
 
 
 

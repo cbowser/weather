@@ -7,37 +7,36 @@
 
  .roboto {font-family: 'Roboto', sans-serif;}
 
-.robotocon {font-family: 'Roboto Condensed', sans-serif;
-}
-
 .montserrat {font-family: 'Montserrat', sans-serif;}
 
 
-.pages {font-weight: 100;}
 
-.lighter {font-weight: 100;}
 
-/*MAIN DIV COLOR*/
-.cold .wardrobe {background-color: #FCFFB4;}
+/*MAIN DIV COLOR WARDROBE-----------------------------------------*/
 
-.warm .wardrobe {background-color:#D8FFC5;}
 
-.hot .wardrobe {background-color:#A9FFE4;}
-/*LOCATION BANNER COLOR*/
+.wardrobe {background-color:#FCFBE8;}
+
+
+
+
+/*LOCATION BANNER COLOR LOCATE------------------------------*/
 
 .warm .locate {
-  background-color: #FFC98F;
+  background-color: #D4FFC1;
 }
 .cold .locate {
   background-color:#BEDFFF;
 }
 
 .hot .locate {
-  background-color:#FFAC96;
+  background-color:#FFDC9F;
 }
 
-/*MAIN BANNER COLOR*/
 
+
+
+/*MAIN BANNER COLOR STAGE
 .hot .stage {
   background-color: #FCF3CF;
 }
@@ -45,7 +44,8 @@
 .cold .stage {background-color: #AEEEB8;}
 
 .warm .stage {background-color:#FDFABB;}
-/*CONDITIONS BANNER COLOR*/
+
+/*CONDITIONS BANNER COLOR CURRENT
 
 .clear .current {
   background-color: lightskyblue;
@@ -64,10 +64,9 @@
 
 .snow .current {
   background-color:floralwhite;
-
 }
 
-/*WIND BANNER*/
+/*WIND
 .calm .air {
   background-color:#C7E8FF;
 }
@@ -79,20 +78,36 @@
 .windy .air {
   background-color: #8CCBFF;
 }
+-->
 
+/*INPUT BOX & BUTTON/ HIDDEN EXTAR ?JS unable to delete*/
+input {
+  background: white;
+  border:none;
+}
+input:focus {outline:0}
 
+.btn {
+  border: none;
+  visibility: hidden;
+}
 
-/*LOLA OUTFITS*/
+button:focus {outline:0;}
+
+.extra {
+  visibility: hidden
+}
+
+/*LOLA OUTFIT---------------------------------------S*/
 .lolabean {
-  height:500px;
-  width:500px;
-  overflow:hidden;
+  height:700px;
+  width:50%;
 }
 
 @media (max-width:500px) {
   .lolabean {height:300px;
   width:300px;}
-
+  .btn {visibility: visible;}
 }
 
 .snow .lolabean {
@@ -147,17 +162,15 @@ background-size:contain;
 
 
 /*WEATHER ANIMATIONS*/
-/*RAIN ANIMATION*/
+
+/*RAIN ANIMATION--------------------------------*/
 
 .rain .element
 {height:50px;
   width:60px;
-animation-name: top;
-animation-duration: 5s;
-animation-timing-function: linear;
+  animation: top 5s linear infinite;
 position: relative;
 right:-10rem;
-animation-iteration-count: infinite;
 background-image: url(/images/lightrain.png);
 background-repeat: no-repeat;
 background-size: contain;}
@@ -166,25 +179,20 @@ background-size: contain;}
 .rain .element-two
 {height:50px;
   width:60px;
-animation-name: top;
-animation-duration: 5s;
-animation-timing-function:linear;
+  animation:top 5s linear infinite;
 position: relative;
-right:-20rem;
-animation-iteration-count: infinite;
+right:-25rem;
 background-image: url(/images/medrain.png);
 background-repeat: no-repeat;
 background-size: contain;}
 
+
 .rain .element-three
 {height:50px;
   width:60px;
-animation-name: top;
-animation-duration: 5s;
-animation-timing-function:linear;
+  animation: top 5s linear infinite;
 position: relative;
 right:-5rem;
-animation-iteration-count: infinite;
 background-image: url(/images/darkrain.png);
 background-repeat: no-repeat;
 background-size: contain;}
@@ -192,14 +200,9 @@ background-size: contain;}
 .rain .element-four
 {height:50px;
   width:60px;
-animation-name: top;
-animation-duration: 5s;
-animation-timing-function:linear;
+  animation: top 5s linear infinite;
 position: relative;
-top:100%;
-right::-15rem;
-animation-delay: 2s;
-animation-iteration-count: infinite;
+right:-15rem;
 background-image: url(/images/medrain.png);
 background-repeat: no-repeat;
 background-size: contain;}
@@ -207,14 +210,10 @@ background-size: contain;}
 .rain .element-five
 {height:50px;
   width:60px;
-animation-name: top;
-animation-duration: 5s;
-animation-timing-function:linear;
+  animation: top 5s linear infinite;
 position: relative;
-top:100%;
 right:-25rem;
-animation-iteration-count: infinite;
-animation-delay:4s;
+top:30%;
 background-image: url(/images/darkrain.png);
 background-repeat: no-repeat;
 background-size: contain;}
@@ -222,26 +221,27 @@ background-size: contain;}
 .rain .element-six
 {height:50px;
   width:60px;
-animation-name: top;
-animation-duration: 5s;
-animation-timing-function:linear;
+  animation: top 5s linear infinite;
 position: relative;
-top:100%;
 right:-20rem;
-animation-iteration-count: infinite;
-animation-delay:3s;
 background-image: url(/images/lightrain.png);
 background-repeat: no-repeat;
 background-size: contain;}
 
 
 @keyframes top {
-  0% {top:-90%;
-  }
-  100% {top:100%;}
+  0% {top: -70%;}
+  100% {top:60%;}
 }
 
-/*DRIZZLE ANIMATION*/
+@media (max-width:500px) {
+.rain .element-two {right:-15rem;}
+.rain .element-five {right:-6rem;}
+.rain .element-six {right:-13rem;}
+}
+
+
+/*DRIZZLE ANIMATION---------------------------------*/
 
 .drizzle .element
 {height:50px;
@@ -293,7 +293,7 @@ background-size: contain;}
 }
 
 
-/*SNOW ANIMATION*/
+/*SNOW ANIMATION---------------------------------------*/
 
 .snow .flake
 {height:50px;
@@ -384,17 +384,21 @@ background-image: url(/images/snowflake.png);
 background-repeat: no-repeat;
 background-size: contain;}
 
-
 @keyframes flake {
   0% {top:-90%;}
   100% {top:30%;}
 }
 
 
+@media (max-width:500px) {
+  .snow .flake {animation-delay:0s;}
+  .snow .flake-five {animation-delay:0s;}
+    .snow .flake-four {animation-delay:0s;}
+
+}
 
 
-
-/*CLOUD ANIMATION*/
+/*CLOUD ANIMATION-------------------------------------*/
 
 .cloudyday {
   height:6rem;
@@ -410,7 +414,6 @@ background-size: contain;}
 
 
 .clouds .cloudyday {
-  left: 100%;
   top: 0%;
   margin: 0;
   animation-name: cloudyday;
@@ -436,21 +439,29 @@ background-size: contain;}
 }
 
 
+@media (max-width:500px) {
+  .clouds .cloudyday {top:-10%;}
+  .clouds .cloudyday2 {top:-45%;}
+  .cloudyday, .cloudyday2 {height:5rem}
+
+}
+
+
 @keyframes cloudyday {
-  0% { left:-50%; }
+  0% { left:-100%; }
   100% { left: 100%; }
 }
 
 @keyframes cloudyday2 {
-  0% { right:-130% }
+  0% { right:-100% }
   100% { right: 100%; }
 }
 
 
-/*SUN ANIMATION*/
+/*SUN ANIMATION----------------------------------*/
 
 .sunnyday {
-  height:8rem;
+  height:9rem;
   width:100%;
   position: relative;
 }
@@ -460,23 +471,27 @@ background-size: contain;}
   left: 100%;
   top: -10rem;
   margin: 0;
-  animation-name: sunnyday;
-  animation-duration:20s;
-  animation-timing-function: linear;
+  animation: sunnyday 25s linear infinite;
   background-image: url(/images/sun.png);
   background-size: contain;
   background-repeat: no-repeat;
-  animation-iteration-count: infinite;
 }
 
+
+@media (max-width:500px) {
+  .clear .sunnyday {
+    top:-10rem;
+  }
+  .sunnyday {height:7rem}
+}
 
 @keyframes sunnyday{
-  0% { left: -10%; }
-  100% { left: 90%; }
+  0% { left: -100%; }
+  100% { left: 100%; }
 }
 
 
-/*THUNDERSTORM*/
+/*THUNDERSTORM----------------------------------*/
 
 
 .storm{
@@ -550,7 +565,7 @@ background-size: contain;}
 .thunderstorm .element
 {height:50px;
   width:60px;
-animation-name: top;
+animation-name: topp;
 animation-duration: 5s;
 animation-timing-function: linear;
 position: relative;
@@ -564,7 +579,7 @@ background-size: contain;}
 .thunderstorm .element-two
 {height:50px;
   width:60px;
-animation-name: top;
+animation-name: topp;
 animation-duration: 5s;
 animation-timing-function:linear;
 position: relative;
@@ -577,7 +592,7 @@ background-size: contain;}
 .thunderstorm .element-three
 {height:50px;
   width:60px;
-animation-name: top;
+animation-name: topp;
 animation-duration: 5s;
 animation-timing-function:linear;
 position: relative;
@@ -590,7 +605,7 @@ background-size: contain;}
 .thunderstorm .element-four
 {height:50px;
   width:60px;
-animation-name: top;
+animation-name: topp;
 animation-duration: 5s;
 animation-timing-function:linear;
 position: relative;
@@ -603,7 +618,7 @@ background-size: contain;}
 .thunderstorm .element-five
 {height:50px;
   width:60px;
-animation-name: top;
+animation-name: topp;
 animation-duration: 5s;
 animation-timing-function:linear;
 position: relative;
@@ -618,7 +633,7 @@ background-size: contain;}
 .thunderstorm .element-six
 {height:50px;
   width:60px;
-animation-name: top;
+animation-name: topp;
 animation-duration: 5s;
 animation-timing-function:linear;
 position: relative;
@@ -631,7 +646,7 @@ background-repeat: no-repeat;
 background-size: contain;}
 
 
-@keyframes top {
+@keyframes topp {
   0% {top:-90%;
   }
   100% {top:100%;}
@@ -653,8 +668,7 @@ background-size: contain;}
 
 
   .breezy .windyday {
-    left: 100%;
-    top: -80%;
+    top: -45%;
     margin: 0;
     animation-name: windyday;
     animation-duration: 15s;
@@ -665,6 +679,11 @@ background-size: contain;}
     animation-iteration-count: infinite;
   }
 
+@media (max-width:500px) {
+  .breezy .windyday {top:-150%;}
+  .windyday {height:4rem;
+  width:5rem;}
+}
 
   .windy .windyday {
     left: 100%;
@@ -694,7 +713,7 @@ background-size: contain;}
 
 
   @keyframes windyday {
-    0% { left: -60%; }
+    0% { left: -100%; }
     100% { left: 100%; }
   }
 
@@ -704,43 +723,8 @@ background-size: contain;}
   }
 
 
-/*
-  .breezy .windyday2 {
-    left: 100%;
-    top: 0;
-    margin: 0;
-    animation-name: windyday2;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    background-image: url(/images/wind2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation-iteration-count: infinite;
-  }
-
-  .breezy .windyday {
-    position: relative;
-    left: 100%;
-    top: 20rem;
-    margin: 0;
-    animation-name: windyday;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    background-image: url(/images/wind.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes windyday {
-    0% { right: -180%; }
-    100% { right: 100%; }
-  }
-
-  @keyframes windyday2 {
-0% {right:-60%}
-100% {right:0;}
-  }
 
   /*LOLA'S PAGE*/
   .numbers {font-weight: bolder;}
+
+.lolapage {background-color: #FCFBE8;}
