@@ -100,15 +100,16 @@ button:focus {outline:0;}
 
 /*LOLA OUTFIT---------------------------------------S*/
 .lolabean {
-  height:700px;
-  width:50%;
+  height:100%;
+  width:100%;
 }
 
 @media (max-width:500px) {
-  .lolabean {height:300px;
-  width:300px;}
+  .lolabean {
+overflow:hidden;}
   .btn {visibility: visible;}
 }
+
 
 .snow .lolabean {
   background-image: url(/images/lolacold.png);
@@ -294,6 +295,20 @@ background-size: contain;}
 
 
 /*SNOW ANIMATION---------------------------------------*/
+
+
+.snow .flake
+{height:50px;
+width:60px;
+background-image: url(/images/snowflake.png);
+background-size: contain;
+background-repeat: no-repeat;
+position:relative;
+transition: all 2s linear;
+animation-name: flake;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
 
 .snow .flake
 {height:50px;
