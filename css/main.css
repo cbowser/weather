@@ -102,13 +102,11 @@ button:focus {outline:0;}
 /*LOLA OUTFIT---------------------------------------S*/
 .lolabean {
   height:500px;
-background-color: purple;
 }
 
 .temp {
   width:50%;
   padding-top:30px;
-  background-color: blue;
 }
 
 @media (max-width:500px) {
