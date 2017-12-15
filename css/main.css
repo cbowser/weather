@@ -105,7 +105,6 @@ button:focus {outline:0;}
 }
 
 .temp {
-  width:50%;
   padding-top:30px;
 }
 
@@ -429,7 +428,7 @@ background-size: contain;}
 }
 
 
-/*CLOUD ANIMATION-------------------------------------
+/*CLOUD ANIMATION-------------------------------------*/
 
 .cloudyday {
   height:6rem;
@@ -684,7 +683,7 @@ background-size: contain;}
 }
 
 
-/*WINDY
+/*WINDY*/
 
 .windyday {
     height:5rem;
