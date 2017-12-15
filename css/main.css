@@ -94,23 +94,31 @@ input:focus {outline:0}
 
 button:focus {outline:0;}
 
+
 .extra {
   visibility: hidden
 }
 
 /*LOLA OUTFIT---------------------------------------S*/
 .lolabean {
-  height:100%;
-  width:100%;
+  height:500px;
+background-color: purple;
+}
+
+.temp {
+  width:50%;
+  padding-top:30px;
+  background-color: blue;
 }
 
 @media (max-width:500px) {
-  .lolabean {
+  .lolabean {height:500px;
+    width:100%;
 overflow:hidden;}
   .btn {visibility: visible;}
 }
 
-
+/*UNNECESSARY
 .snow .lolabean {
   background-image: url(/images/lolacold.png);
   background-position: center;
@@ -120,24 +128,27 @@ overflow:hidden;}
 
 
 .clouds .lolabean {
-  background-image:url(/images/lolacloud.png);
+  background-image:url(/images/lolacloud2.png);
   background-repeat:no-repeat;
   background-position:center;
   background-size: contain;
 }
 
+*/
+
 .cold .lolabean {
   background-image: url(/images/lolacold.png);
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+
 .warm .lolabean {
-  background-image:url(/images/lolacloud.png);
+  background-image:url(/images/lolacloud2.png);
   background-repeat:no-repeat;
-  background-position:center;
   background-size:contain;
+  background-position: center;
 }
 
 .hot .lolabean {
@@ -159,6 +170,13 @@ background-image: url(/images/rainlola2.png);
 background-repeat: no-repeat;
 background-position: center;
 background-size:contain;
+}
+
+@media (max-width:500px) {
+.cold .lolabean {background-size: 95% 90%;}
+.warm .lolabean {background-size: 80% 90%}
+.rain .lolabean {background-size: 90% 90%;}
+.hot .lolabean {background-size: 90%;}
 }
 
 
@@ -413,7 +431,7 @@ background-size: contain;}
 }
 
 
-/*CLOUD ANIMATION-------------------------------------*/
+/*CLOUD ANIMATION-------------------------------------
 
 .cloudyday {
   height:6rem;
@@ -668,7 +686,7 @@ background-size: contain;}
 }
 
 
-/*WINDY*/
+/*WINDY
 
 .windyday {
     height:5rem;
